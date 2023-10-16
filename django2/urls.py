@@ -15,9 +15,10 @@ urlpatterns = [
     path('add_to_cart/<int:pk>', views.add_products_to_user_card),
     path('delete_product/<int:pk>', views.delete_exact_user_cart),
     path('forms', send_form, name='forms'),
-    path('accounts/', include('allauth.urls')),
-    path('login', views.CustomLoginView.as_view()),
-    path('logout', views.LogoutView.as_view()),
+    path('accounts/', include('django.contrib.auth.urls')),
+    path('register/', views.register_user)
+    # path('login', views.CustomLoginView.as_view()),
+    # path('logout', views.LogoutView.as_view()),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

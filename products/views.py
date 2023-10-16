@@ -1,3 +1,4 @@
+from django.contrib.auth.models import User
 from django.shortcuts import render, redirect
 from django.views.generic import ListView, TemplateView, DetailView
 from django.contrib.auth.views import LoginView, LogoutView
@@ -10,12 +11,12 @@ from django.urls import reverse_lazy
 from products.forms import FormModelForm
 from products.models import ProductModel, CategoryModel, Cart
 
-class CustomLoginView(LoginView):
-    template_name = 'registration/login.html'
-    redirect_authenticated_user = True
-
-    def get_success_url(self):
-        return reverse_lazy('main_page')
+# class CustomLoginView(LoginView):
+#     template_name = 'registration/login_css.html'
+#     redirect_authenticated_user = True
+#
+#     def get_success_url(self):
+#         return reverse_lazy('idex')
 
 class IndexPageView(ListView):
     template_name = 'index.html'
@@ -102,3 +103,18 @@ def delete_exact_user_cart(request, pk):
                         user_product=product_to_delete).delete()
 
     return redirect('/user_cart')
+
+
+# Register user
+def register_user(request):
+    if request.method == 'POST':
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+
+        new_user = User(username=username, password=password)
+        new_user.save()
+        return redirect('/')
+
+    return render(request, 'account/signup.html')
+
+
