@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+    <!-- Hero Section Begin -->
+    <section class="baner">
+        <a href="{% url 'shop' %}" target=_self>
+            <img src="https://www.ixbt.com/img/n1/news/2023/4/6/maxresdefault_0_large.jpg"
+                 border="0" title="Перейти в магазин" width="1350" height="400" alt=""></a>
+    </section>
+    <!-- Hero Section End -->
+{% endblock %}
