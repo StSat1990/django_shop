@@ -6,128 +6,23 @@
   <component name="ChangeListManager">
     <list default="true" id="a82b49f5-6e30-4abf-9bbc-62e402410340" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/about/about-us.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/about/team-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/about/team-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/about/team-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/about/team-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/about/testimonial-author.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/about/testimonial-pic.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/banner/banner-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/banner/banner-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/banner/banner-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/blog/blog-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/blog/blog-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/blog/blog-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/blog/blog-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/blog/blog-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/blog/blog-6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/blog/blog-7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/blog/blog-8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/blog/blog-9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/blog/details/blog-author.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/blog/details/blog-details.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/breadcrumb-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/clients/client-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/clients/client-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/clients/client-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/clients/client-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/clients/client-5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/clients/client-6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/clients/client-7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/clients/client-8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/footer-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/hero/hero-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/hero/hero-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/hero/hero-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icon/calendar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icon/compare.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icon/heart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icon/heart2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/instagram/instagram-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/instagram/instagram-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/instagram/instagram-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/instagram/instagram-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/instagram/instagram-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/instagram/instagram-6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/payment.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/product-sale.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/product/product-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/product/product-10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/product/product-11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/product/product-12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/product/product-13.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/product/product-14.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/product/product-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/product/product-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/product/product-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/product/product-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/product/product-6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/product/product-7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/product/product-8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/product/product-9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shop-details/details-payment.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shop-details/product-big-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shop-details/product-big-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shop-details/product-big-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shop-details/product-big.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shop-details/thumb-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shop-details/thumb-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shop-details/thumb-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shop-details/thumb-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shopping-cart/cart-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shopping-cart/cart-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shopping-cart/cart-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shopping-cart/cart-4.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django2/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/django2/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django2/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django2/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/products/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/changelists.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/css/changelists.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/css/dashboard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/forms.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/css/forms.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/nav_sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/css/nav_sidebar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/css/responsive.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/responsive_rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/css/responsive_rtl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/css/rtl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/widgets.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/css/widgets.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/SelectBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/js/SelectBox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/SelectFilter2.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/js/SelectFilter2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/admin/DateTimeShortcuts.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/js/admin/DateTimeShortcuts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/admin/RelatedObjectLookups.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/js/admin/RelatedObjectLookups.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/autocomplete.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/js/autocomplete.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/cancel.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/js/cancel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/js/core.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/inlines.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/js/inlines.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/nav_sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/js/nav_sidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/popup_response.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/js/popup_response.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/prepopulate_init.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/js/prepopulate_init.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/urlify.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/js/urlify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/jquery/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/js/vendor/jquery/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/jquery/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/js/vendor/jquery/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/about.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account/signup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog-details.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/checkout.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/contact.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/exact_category.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/exact_product.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/forms.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/forms.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/login_css.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/shop-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/shop-details.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/shop.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/user_cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user_cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Django-4.2.5.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Django-4.2.5.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/asgiref-3.7.2.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/asgiref-3.7.2.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-23.2.1.dist-info/METADATA" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pip-23.2.1.dist-info/METADATA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-23.2.1.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pip-23.2.1.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlparse-0.4.4.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlparse-0.4.4.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/tzdata-2023.3.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/tzdata-2023.3.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/Activate.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/Activate.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/activate.bat" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/activate.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/deactivate.bat" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/deactivate.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/pyvenv.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/venv/pyvenv.cfg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,32 +40,23 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/venv/lib/site-packages/django/conf/__init__.py" root0="FORCE_HIGHLIGHTING" />
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 1
-}</component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 1
+}]]></component>
   <component name="ProjectId" id="2VkVjW7i8yhW9IKnejCCSXGOoh3" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Обучение/Tehnikum/Py/Django/templates/registration&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "git-widget-placeholder": "main"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Обучение\Tehnikum\Py\Django\templates\registration" />
@@ -193,6 +79,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -211,7 +98,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1695380200253</updated>
+      <workItem from="1697569314421" duration="2142000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

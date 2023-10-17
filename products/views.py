@@ -3,6 +3,7 @@ from django.shortcuts import render, redirect
 from django.views.generic import ListView, TemplateView, DetailView
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 
 # models.py, admin.py, views.py, urls.py
 
@@ -33,24 +34,6 @@ class ShopPageView(ListView):
         qs = ProductModel.objects.all()
         q = self.request.GET.get('q')
         category = self.request.GET.get('category')
-
-        if q:
-            qs = qs.filter(title__icontains=q)
-
-        if category:
-            category_ids = category.split(',')
-            qs = qs.filter(category__in=category_ids)
-
-    def get_context_data(self, *, object_list=None, **kwargs):
-        context = super().get_context_data()
-        context['categories'] = CategoryModel.objects.all
-
-        return context
-
-    def get_queryset(self):
-        qs = ProductModel.objects.all()
-        q = self.request.GET.get('q')
-        category = self.request.GET.get('category')
         sort = self.request.GET.get('sort')
 
         if q:
@@ -67,6 +50,14 @@ class ShopPageView(ListView):
                 qs = qs.order_by('-price')
 
         return qs
+
+    def get_context_data(self, *, object_list=None, **kwargs):
+        context = super().get_context_data()
+        context['categories'] = CategoryModel.objects.all()
+        context['cart'] = Cart.objects.filter(user_id=self.request.user.id)
+
+        return context
+
 
 class ShopDetailView(DetailView):
     template_name = 'shop-details.html'
@@ -89,32 +80,46 @@ def send_form(request):
 
 
 @login_required
-def add_products_to_user_card(request, pk):
+def add_to_cart(request, pk):
     if request.method == 'POST':
         checker = ProductModel.objects.get(id=pk)
+        pr_count = request.POST.get('pr_count')
 
-        if checker.product_amount >= int(request.POST.get('pr_count')):
+        if pr_count is not None:
+            try:
+                pr_count = int(pr_count)
+                if pr_count < 1:
+                    pr_count = 1  # Если указано отрицательное или нулевое значение, устанавливаем 1
+            except ValueError:
+                pr_count = 1  # Если не удается преобразовать в int, устанавливаем 1
+        else:
+            pr_count = 1  # Если pr_count отсутствует, устанавливаем 1 по умолчанию
+
+        if checker.product_amount >= pr_count:
             Cart.objects.create(user_id=request.user.id,
                                 user_product=checker,
-                                user_product_quantity=int(request.POST.get('pr_count'))).save()
-
-            return redirect('/')
-
+                                user_product_quantity=pr_count)
         else:
-            return redirect(f'/product/{checker.id}')
+            messages.error(request, 'Недостаточно товара.')
 
+    return redirect('shop')
+
+
+@login_required
 def user_cart(request):
     cart = Cart.objects.filter(user_id=request.user.id)
 
     if request.method == 'POST':
         main_text = 'Новый заказ\n\n'
 
-        for i in cart:
-            main_text += f'Товар: {i.user_product}\n' \
-                         f'Количество: {i.user_product_quantity}'
-            # bot.send_message(791555605, main_text)
-            cart.delete()
-            return redirect('/')
+        for item in cart:
+            main_text += f'Товар: {item.user_product}\n' \
+                         f'Количество: {item.user_product_quantity}\n'
+
+        # Здесь вы можете отправить уведомление о заказе
+
+        cart.delete()
+        return redirect('shop')
 
     return render(request, 'user_cart.html', {'cart': cart})
 

@@ -75,8 +75,13 @@
                                     </div>
                                 <div class="product__item__text">
                                     <h6>{{ product.title }}</h6>
-                                    <a href="#" class="add-cart">+ Добавить в корзину</a>
                                     <h5 style="color:green">${{ product.price }}</h5>
+                                    <form method="post" action="{% url 'add-to-cart' product.pk %}">
+                                        {% csrf_token %}
+                                        <button type="submit" class="add-cart">
+                                                + Добавить в корзину
+                                        </button>
+                                    </form>
                                 </div>
                             </div>
 

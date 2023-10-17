@@ -1,24 +1,41 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
 {% load static %}
 {% block content %}
 <div id="preloder">
     <div class="loader"></div>
 </div>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-  {% for i in cart %}
-  Продукт: {{ i.user_product }} <br>
-  Кол-во: {{ i.user_product_quantity }}
-  {% endfor %}
-<form method="POST" style="text-align:center">
-    {% csrf_token %}
-    <button>Оформить заказ</button>
-    </form>
-</body>
-</html>
+  <div class="container">
+    <h3>Корзина</h3>
+
+    {% if cart %}
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Изображения</th>  
+            <th>Товар</th>
+            <th>Количество</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item in cart %}
+            <tr>
+              <td><img src="{{ item.user_product.image.url }}" width="250px" alt=""></td>
+              <td>{{ item.user_product.title }}</td>
+              <td>{{ item.user_product_quantity }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+      <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-primary">Заказать</button>
+          <br>
+      </form>
+      <br>
+      <br>
+    {% else %}
+      <p>Ваша корзина пуста.</p>
+    {% endif %}
+  </div>
 {% endblock %}
