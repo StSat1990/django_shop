@@ -1,6 +1,6 @@
 from django.contrib import admin
-
 from products.models import ProductModel, FormModel, CategoryModel, Cart
+from django.utils.safestring import mark_safe
 
 @admin.register(CategoryModel)
 class CategoryModelAdmin(admin.ModelAdmin):
@@ -17,4 +17,5 @@ class FormModelAdmin(admin.ModelAdmin):
     list_display = ['id', 'username', 'city', 'comment']
 
 
-admin.register(Cart)
+
+

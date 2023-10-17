@@ -1,8 +1,8 @@
 from django.contrib.auth.models import User
 from django.shortcuts import render, redirect
 from django.views.generic import ListView, TemplateView, DetailView
-from django.contrib.auth.views import LoginView, LogoutView
-from django.urls import reverse_lazy
+from django.contrib.auth import authenticate, login
+from django.contrib.auth.decorators import login_required
 
 # models.py, admin.py, views.py, urls.py
 
@@ -37,16 +37,36 @@ class ShopPageView(ListView):
         if q:
             qs = qs.filter(title__icontains=q)
 
-        elif category:
-            qs = qs.filter(category_id=q)
-
-        return qs
+        if category:
+            category_ids = category.split(',')
+            qs = qs.filter(category__in=category_ids)
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super().get_context_data()
         context['categories'] = CategoryModel.objects.all
 
         return context
+
+    def get_queryset(self):
+        qs = ProductModel.objects.all()
+        q = self.request.GET.get('q')
+        category = self.request.GET.get('category')
+        sort = self.request.GET.get('sort')
+
+        if q:
+            qs = qs.filter(title__icontains=q)
+
+        if category:
+            category_ids = category.split(',')
+            qs = qs.filter(category__in=category_ids)
+
+        if sort:
+            if sort == 'price':
+                qs = qs.order_by('price')
+            elif sort == '-price':
+                qs = qs.order_by('-price')
+
+        return qs
 
 class ShopDetailView(DetailView):
     template_name = 'shop-details.html'
@@ -62,10 +82,13 @@ def send_form(request):
     form = FormModelForm(request.POST)
     if form.is_valid():
         form.save()
+        return redirect('/')
 
     context['forms'] = form
     return render(request, 'forms.html', context)
 
+
+@login_required
 def add_products_to_user_card(request, pk):
     if request.method == 'POST':
         checker = ProductModel.objects.get(id=pk)
@@ -111,9 +134,14 @@ def register_user(request):
         username = request.POST.get('username')
         password = request.POST.get('password')
 
-        new_user = User(username=username, password=password)
-        new_user.save()
-        return redirect('/')
+        if not User.objects.filter(username=username).exists():
+            user = User.objects.create_user(username=username, password=password)
+            user = authenticate(username=username, password=password)
+            if user:
+                login(request, user)
+                return redirect('/')
+        else:
+            return redirect('/')
 
     return render(request, 'account/signup.html')
 

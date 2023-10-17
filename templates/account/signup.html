@@ -1,32 +1,20 @@
 {% extends "base.html" %}
-
 {% block content %}
+<!-- Page Preloder -->
+<div id="preloder">
+    <div class="loader"></div>
+</div>
 <form method="post" style="text-align:center">
     {% csrf_token %}
-    <label for="">Username</label>
-    <br>
+    <label for="">Имя пользователя:</label>
     <input type="text" name="username" required>
-    <br>
-    <label for="">Password</label>
-    <br>
+    <br><br>
+    <label for="">Пароль:</label>
     <input type="text" name="password" required>
     <br>
     <br>
-    <input type="submit" value="Кнопка" />
+    <input type="submit" value="&nbsp;&nbsp;&nbsp;Зарегистрироваться&nbsp;&nbsp;&nbsp;" />
     <br>
     <br>
 </form>
 {% endblock %}
-
-
-{% comment %}
-**registration/registration_form.html**
-Used to show the form users will fill out to register. By default, has
-the following context:
-
-``form``
-    The registration form. This will be an instance of some subclass
-    of ``django.forms.Form``; consult `Django's forms documentation
-    <http://docs.djangoproject.com/en/dev/topics/forms/>`_ for
-    information on how to display this in a template.
-{% endcomment %}

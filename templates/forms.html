@@ -11,11 +11,11 @@
     <title>Title</title>
 </head>
 <body>
-<h3>Напишите свое сообщение</h3>
-<form method="POST">
+<h4 style="text-align:center">Напишите свое сообщение</h4><br>
+<form method="POST" style="text-align:center">
     {% csrf_token %}
     {{ forms.as_p }}
-    <button type="submit">Отправить</button>
+    <button type="submit">Отправить</button><br><br>
 </form>
 </body>
 </html>

@@ -28,7 +28,7 @@
                                             <div class="shop__sidebar__categories">
                                                 <ul class="nice-scroll">
                                                     {% for category in categories %}
-                                                    <li><a href="#">{{ category.title }}</a></li>
+                                                    <li><a href="?category={{ category.id }}">{{ category.title }}</a></li>
                                                     {% endfor %}
                                                 </ul>
                                             </div>
@@ -49,11 +49,15 @@
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="shop__product__option__right">
-                                    <p>Сортировать по цене:</p>
-                                    <select>
-                                        <option value="">По возрастанию</option>
-                                        <option value="">По убыванию</option>
-                                    </select>
+                                     <p>Сортировать по цене:</p>
+                                   <form method="get">
+                                      <select name="sort">
+                                        <option value="price">По возрастанию</option>
+                                        <option value="-price">По убиванию</option>
+                                      </select>
+                                       <br>
+                                      <input type="submit" value="Применить">
+                                   </form>
                                 </div>
                             </div>
                         </div>
@@ -65,8 +69,6 @@
                                     <div class="product__item__pic set-bg" data-setbg="{{ product.image.url }}">
                                         <span class="label">Скидка -10%</span>
                                         <ul class="product__hover">
-                                            <li><a href="#"><img src="{% static 'img/icon/heart.png' %}" alt=""></a></li>
-                                            <li><a href=""><img src="{% static 'img/icon/compare.png' %}" alt=""> <span>Сравнить</span></a>
                                             <li><button onclick="window.location.href = '{% url 'shop-detail' pk=product.pk %}';">Подробнее</button>
                                         </li>
                                         </ul>
